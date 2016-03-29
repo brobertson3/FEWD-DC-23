@@ -1,6 +1,6 @@
 ![GeneralAssemb.ly](../../img/icons/FEWD_Logo.png)
 
-#FEWD 23 Lesson 3
+#FEWD 23 Lesson 3 :)
 
 ## GitHub, Box Model, & More CSS
 

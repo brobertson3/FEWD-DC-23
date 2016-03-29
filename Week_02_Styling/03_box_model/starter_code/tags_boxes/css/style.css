@@ -1,0 +1,36 @@
+body {
+	
+}
+h1 {
+	background: red;
+	padding: 50px;
+	border: 10px dashed yellow;
+}
+
+p {
+	background: blue;
+	color: white;
+	padding: 10px;
+	border: black solid 10px;
+}
+
+code {
+	background: white;
+	color: black;
+	padding: 3px;
+	border: 1px black solid;
+}
+
+h2 {
+	background: green;
+	padding: 4px;
+	border: 3px solid orange;
+}
+
+ol {
+	margin: 3px 0;
+}
+
+li {
+	margin: 3px 10px;
+}
