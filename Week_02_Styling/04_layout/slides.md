@@ -6,83 +6,66 @@
 
 ---
 
-## Learning Objectives
+## Agenda
 
-* Draw the DOM Tree for web pages containing ```<div>``` & ```<section>```.
-* Apply header, footer, sidebar, and multi-column layouts to develop a web page.
-* Experiment and predict effects of floats and clearing CSS positioning.
+* Class vs. ID review
+* HTML5 Structural Elements
+* Floats
+* Google Fonts
+* Lab Time
+
+Note:
+Learning Objectives
+- Draw the DOM Tree for web pages containing ```<div>``` & ```<section>```.
+- Apply header, footer, sidebar, and multi-column layouts to develop a web page.
+- Experiment and predict effects of floats and clearing CSS positioning.
 
 ---
 
-## Agenda
+## But first!... a scheduling note
 
-* Review
-* Divs, Classes and IDs
-* HTML5 Structural Elements
-* Floats
-* Lab Time
+Note:
+http://updwn.co/-KDYwcA_Q2M2lu0-jX9y
 
 ---
 
 ## Review
 
-What would you like to review?
+We went through a whole lot of stuff on Tuesday, so let's review.
+
+Note:
+To Dos:
+- Sync class repo!
+- What is the box model?
 
 ---
 
-## GitHub
+## Class vs. ID
 
-Sync the class repo with changes made since Tuesday!
+Let's review!  What's the difference?
 
----
-
-## What is a Div?
-
----
-
-## Class and ID
-
-* With classes and IDs we can target specific elements on a page, so we can manipulate it uniquely.
+Note:
+- IDs are unique.  Only 1 per page.
+- Classes are not unique.  Can have many on a page.
 
 ---
 
-## Class and ID
-
-![](../../img/unit_1/tags_attributes.png)
-
----
-
-## Class and ID
-
-* IDs are unique.  Only 1 per page.
-
-* Classes are not unique.  Can have many on a page.
-
----
-
-## Class and ID
+## Class vs. ID
 
 When should you use them?
 
----
-
-## Class and ID
-
-How to __select__ classes in CSS
-
-```
-.className
-```
-
-```
-#idName
-```
+Note:
+Go over best practices here!
+- classes great for styles that will be reused.
+- you want to reuse styles for consistency. 
+- you also don't want to write a ton of code; more to maintain
+- ids are great for very unique styles; usually only use ids for JS, though (later!)
 
 ---
 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 
-## Class and ID
+## Class vs. ID
 
 ---
 
@@ -129,5 +112,55 @@ Image from Chris Coyier's CSS-Tricks
 
 Note:
 First 2 do as a group; rest have them pair up.
-At the end, do not forget to talk about homework submission and exit tickets!
 
+---
+
+## Let's talk about fonts
+
+All computers come with a set of standard fonts.  These are called _web-safe fonts_.
+
+* Arial
+* Georgia
+* Times New Roman
+* Verdana
+* ... even Comic Sans
+
+Note:
+http://www.w3schools.com/cssref/css_websafe_fonts.asp
+
+---
+
+## Fonts
+
+```
+body {
+    font-family: Arial, Verdana, sans-serif;
+}
+```
+
+---
+
+## Serif vs. Sans-Serif
+
+![GeneralAssemb.ly](../../img/unit_1/serif-san-serif.png)
+
+---
+
+## Serif vs. Sans-Serif
+
+![GeneralAssemb.ly](../../img/unit_1/A.SerifSansPrint.jpg)
+
+---
+
+## What if I want a different font?
+
+Google Fonts!!
+
+Note:
+https://www.google.com/fonts
+
+---
+
+![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
+
+## Lab Time

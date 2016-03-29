@@ -35,7 +35,7 @@ The computer will do what you tell it to do.
 A __program__ is a set of instructions that you write to tell a computer what to do
 
 Note:
-Peanut butter jelly time!
+Live example time.
 
 ---
 
@@ -79,10 +79,25 @@ This semester we will learn what these keywords and structures are and how they 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Thermostat
 
+Note:
+To Dos
+- How would you write out how a thermostat works - step by step - as though you needed to tell a computer (or an alien from Mars who has never seen a thermostat before).
+- State the purpose of the thermostat, then write out the steps to accomplish that purpose.
+
+Introduce
+- Variables (things that store information)
+- Conditionals (if-then ... if something is true, then do something)
+- Loops (while a circumstance is true, do this thing.  Keep doing this thing until the circumstance is false)
+
 ---
 
 ![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
 ## Rock Paper Scissors
+
+Note:
+To Dos
+- Do the same for the game, but on your own with index cards.
+- 1 index card = 1 step
 
 ---
 

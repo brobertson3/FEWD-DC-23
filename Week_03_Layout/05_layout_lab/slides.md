@@ -2,33 +2,115 @@
 
 # FEWD 23 Lesson 5
 
-## Layout
-
----
-
-## Learning Objectives
-
-* Apply floats and clearing techniques to effectively create a two column layout.
+## Talking More About Layout
 
 ---
 
 ## Agenda
 
 * Review
-* More about sizes
 * Lab time!
+* Talk about sizes
 
 Note:
-Starter/Solution code for this lesson is located in the Week 3 [Assignment directory](../Assignment)
+Learning Objectives
+- Apply floats and clearing techniques to effectively create a two column layout.
+- Apply rem and em sizes to a layout
 
 ---
 
 ## Review
 
-Floats and clears review
+Let's talk about last week's homework.. questions?
 
 Note:
-Also do a review of the box model.
+Do a GitHub review; update the GitHub class repo!
+
+---
+
+## What was up with that starter CSS?
+
+---
+
+## Box Model Hack
+
+* Fixes the box model to be less annoying.
+* Width = element width + padding + border
+
+```
+* {
+     box-sizing: border-box;
+}
+```
+
+Note:
+Talk about vendor prefixes here too.  Vendor prefixes are in old code (like last week's homework), but are largely not needed anymore.  See http://caniuse.com.
+
+---
+
+## :after Pseudo-selector
+
+* Pseudo-selectors are selectors you can use with a tag, class, or ID to select a different aspect of an element.
+* For example, `:after` adds an imaginary "element" after the selected element.
+
+```
+.myClass:after {
+    content: 'hello world';
+    color: blue;
+}
+```
+
+Note:
+To Dos:
+- Example code to play around with :after, :before, :hover.
+- Go into the starter CSS and take a look at what was there.
+
+---
+
+## Review: Float and Clear
+
+Note:
+Draw a layout on the board and walk through how to code it.
+
+---
+
+## Last (but not least!)... comments
+
+* You can write notes to yourself in your HTML and CSS code that the browser will not care about.
+* These notes are just for you.
+
+---
+
+## HTML Comments
+
+```
+<!-- 
+    This is an HTML comment.
+    I can write as much as I want inside of this comment tag.
+-->
+```
+
+---
+
+## CSS Comments
+
+```
+/*
+    This is a CSS comment.
+    I can write as much as I want inside here too!
+*/
+```
+
+---
+
+![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
+
+## Layout Lab
+
+Note:
+To Dos
+- Code for this lesson is located in the Week 3 [Assignment directory](../Assignment)
+- Half-way through, demo Chrome's dev tools
 
 ---
 
@@ -59,62 +141,43 @@ Draw an example for this one.  Also, remind them about the box model.
 
 ---
 
+## REM
+
+REMs are based on the page's base font size.  Default is 16px.
+
+```
+<style>
+    p {
+        font-size: 1.5rem;
+        width: 2rem;
+    }
+</style>
+
+<p>How much wood can a woodchuck chuck?</p>
+```
+
+---
+
 ## EM
 
-EMs are based on the parent element's font size.  Recommended because they let users resize the element in the browser.
+EMs are based on the parent element's font size.
 
-1 em = 16px
+```
+<style>
+    div { 
+        font-size: 20px; 
+    }
 
-* font-size: 1.5em;
-* width: 2em;
+    p {
+        font-size: 1.5em;
+        width: 2em;
+    }
+</style>
+
+<div>
+    <p>How much wood can a woodchuck chuck?</p>
+</div>
+```
 
 Note:
 Demonstrate difference between zoom and increase text size using Chrome settings.
-
----
-
-![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
-
-## Layout lab
-
-Note:
-Take a look at the Relaxr assignment; code for this lesson is located in the Week 3 [Assignment directory](../Assignment)
-
----
-
-## Responsive Development
-
-__Responsive development__ is creating a web site that looks good on all screen sizes.
-
----
-
-## Media Queries
-
-A __media query__ is a part of your CSS that is only applied when a certain aspect of your web browser is true.  For example:
-
-* My browser is at least 480px wide.
-* My browser is no bigger than 600px wide.
-* My browser is at least 300px tall.
-* My browser is really a print out.
-
----
-
-## Media Queries
-
-```
-@media only screen and (max-width: 600px) {
-	/* This CSS will only be used for screens 
-	   that are 600px wide or smaller. */
-
-	section {
-		float: none;
-	}
-
-	p {
-		font-size: 1.2em;
-	}
-}
-```
-
-Note:
-http://www.w3schools.com/cssref/css3_pr_mediaquery.asp

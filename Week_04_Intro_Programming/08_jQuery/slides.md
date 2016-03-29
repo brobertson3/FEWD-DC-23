@@ -14,21 +14,16 @@
 
 Note:
 Learning Objectives
-
-Differentiate between jQuery and JavaScript, describe benefits of using them.
-
-Recognize jQuery syntax
-
-Use selectors and jQuery functions to effectively manipulate the DOM.
+- Differentiate between jQuery and JavaScript, describe benefits of using them.
+- Recognize jQuery syntax
+- Use selectors and jQuery functions to effectively manipulate the DOM.
 
 ---
 
 ## Intro To Programming Review
 
 Note:
-Syntax can always be looked up.
-
-Programming is about solving problems.
+Syntax can always be looked up.  Programming is about solving problems.
 
 ---
 
@@ -64,12 +59,11 @@ https://jquery.com/
 
 ## jQuery Script Tags
 
-* Adding the file.
-    * &lt;script src="js/jquery-1.8.3.min.js"&gt;&lt;/script&gt;
+jQuery is a Javascript file that you can add to your page `<head>` tag.
 
-* CDN
-    * &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"&gt;&lt;/script>
-
+```
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> < /script >
+```
 
 ---
 
@@ -100,14 +94,18 @@ Like with any language, there are formal rules around how to write it. This is t
 
 ##JavaScript Syntax - Comments
 
-	//Single Line Comments
+```
+// This is a single line comment in Javascript.
 
-	/* Multi line comments /*
+/* 
+	This is a multi-line comment in Javascript.
+	I can write as much as I want here.
+*/
+```
 
 ---
 
-
-##jQuery Syntax
+## jQuery Syntax
 
 $
 
@@ -119,11 +117,11 @@ The Dollar Sign
 
 Selectors are just like CSS
 
-	$(".class").click();
+	$(".class").hide();
 
 ---
 
-##jQuery Syntax - Example
+## jQuery Syntax - Example
 
 ```
 document.getElementById('thingy').onclick = doSomething;
@@ -153,6 +151,18 @@ We will certainly be discussing this in more detail, but in general jQuery letâ€
 
 Note:
 http://codepen.io/anon/pen/Govdrx
+
+---
+
+## Starting your jQuery files
+
+```
+$(document).ready(function() {
+
+	// All of your jQuery code goes in here!
+
+});
+```
 
 ---
 
