@@ -8,21 +8,95 @@
 
 ## Agenda
 
-* Review
+* Sizes
 * Responsive Development
+* Opacity
 * Our last pure HTML/CSS lab (for a while)
 
 Note:
 Learning Objectives
+- Learn about different ways of defining sizes in CSS.
 - Style a page for different screen sizes using media queries.
 - Practice web development by transforming a design comp into an HTML and CSS web page.
 
 ---
 
-## Review
+## But first... Review
+
+Questions from Tuesday?
 
 Note:
-Review sizes.
+Update GitHub class repo
+
+---
+
+## Sizes
+
+There are many ways to define sizes in CSS.
+
+---
+
+## PX
+
+Pixels are the dots that make up your computer screen.  Your screen is a grid of pixels.  1 dot = 1 pixel.
+
+* font-size: 24px;
+* width: 300px;
+
+---
+
+## Percentage
+
+You can define sizes based on a percentage of their __outer__ container.
+
+* width: 50%;
+* margin: 2%;
+
+Note:
+Do a quickie lab using the example code on floats using %
+
+---
+
+## REM
+
+REMs are based on the page's base font size.  Default is 16px.
+
+```
+<style>
+    p {
+        font-size: 1.5rem;
+        width: 2rem;
+    }
+</style>
+
+<p>How much wood can a woodchuck chuck?</p>
+```
+
+---
+
+## EM
+
+EMs are based on the parent element's font size.
+
+```
+<style>
+    div { 
+        font-size: 20px; 
+    }
+
+    p {
+        font-size: 1.5em;
+        width: 2em;
+    }
+</style>
+
+<div>
+    <p>How much wood can a woodchuck chuck?</p>
+</div>
+```
+
+Note:
+Demonstrate difference between zoom and increase text size using Chrome settings.
 
 ---
 
@@ -99,7 +173,7 @@ To dos
 Let's see media queries in action.
 
 Note:
-Go to the new example folder
+Media queries using the code in the example folder
 
 ---
 
