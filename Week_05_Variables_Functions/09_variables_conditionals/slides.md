@@ -16,18 +16,38 @@
 Note:
 
 Learning Objectives
-
-Define variables and identify best cases to use them.
-
-Differentiate between strings, integers and floats.
-
-Apply conditionals to change the programs control flow.
+- Define variables and identify best cases to use them.
+- Differentiate between strings, integers and floats.
+- Apply conditionals to change the programs control flow.
 
 ---
 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 
 ## jQuery Review
+
+Note:
+
+Review
+- What is a jQuery event?
+- What jQuery functions make things appear/disappear?
+- Questions about the homework?
+
+---
+
+## preventDefault
+
+Use this line to prevent the default action of an event
+
+```
+$('a.clickMe').click(somethingHappens);
+
+function somethingHappens() {
+	event.preventDefault();
+
+	// Other stuff here
+}
+```
 
 ---
 
@@ -126,6 +146,45 @@ The types of different values we support include:
 
 ---
 
+## Numbers
+
+Represent numerical data
+
+```
+int:         42
+
+float:      3.14159265
+```
+
+---
+
+## Numbers
+
+Signed
+
+```
+int:         +6
+
+float:      -8.2
+```
+
+---
+
+## Arithmetic In Javascript
+
+Can perform arithmetic on number data types
+
+![](../../img/unit_1/arithmetic.jpg)
+
+Note:
+CFU!
+- How would you write 4 * 3?
+- How would you write 4 * 3 + 2?
+- What is mod?
+- Order of operations
+
+---
+
 ## Strings
 
 * Stores textual information
@@ -165,6 +224,13 @@ Double vs single quoted strings:
 'It\'s a beautiful day'
 ```
 
+Note:
+CFU!
+- What quotes would you use for:
+- I can't go out
+- Snow is "fun"
+- I love "Charlotte's Web"
+
 ---
 
 ## Conversion: String To Number
@@ -196,43 +262,17 @@ number + "";  // => "4"
 ```
 
 Note:
-Why would you need to convert datatypes?
+CFU!
+- Why would you need to convert datatypes?
+- What's the difference between integer and float?
 
 ---
 
-## Numbers
-
-Represent numerical data
-
-```
-int:         42
-
-float:      3.14159265
-```
+## What is a conditional?
 
 ---
 
-## Numbers
-
-Signed
-
-```
-int:         +6
-
-float:      -8.2
-```
-
-Can perform arithmetic on number data types
-
----
-
-## Arithmetic In Javascript
-
-![](../../img/unit_1/arithmetic.jpg)
-
----
-
-##Conditionals
+## Conditionals
 
 ![](../../img/unit_1/conditionals.png)
 
@@ -240,16 +280,18 @@ Can perform arithmetic on number data types
 
 ## Making Decisions
 
-It's either TRUE or FALSE (like booleans)
+It's either TRUE or FALSE
 
-If you are greater than 18 
-you are an adult
+If you are greater than 18, you are an adult.
 
 ```
 if (age > 18){
 	document.write("You are an adult");
 }
 ```
+
+Note:
+Introduce the concept of boolean
 
 ---
 
@@ -349,6 +391,12 @@ if (day == "Tuesday" || day == "Thursday"){
 }
 ```
 
+Note:
+CFU!
+- What chars are used for equality?
+- What chars are used for "and"?
+- What chars are used for "or"?
+
 ---
 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
@@ -357,16 +405,58 @@ if (day == "Tuesday" || day == "Thursday"){
 
 ---
 
+## A couple more jQuery functions for you! 
+
+---
+
+## addClass
+
+Adds a class to a DOM element.  You can then style the class in your CSS!
+
+---
+
+## addClass
+
+Your JS:
+
+```
+$('p.giant').addClass('purple');
+```
+
+Meanwhile in your CSS:
+
+```
+.giant {
+	font-size: 40px;
+} 
+
+.purple {
+	color: purple;
+}
+```
+
+---
+
+## removeClass
+
+Removes a class from a DOM element.
+
+```
+$('p.giant').removeClass('purple');
+```
+
+---
+
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Blackout
 
 Note:
-
-Talk about addClass and removeClass again.  They will need that along with conditionals.
+If there's time, demo animate with colors and opacity.
 
 ---
 
-![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
+## Milestones
 
-## Temp Converter
-
+* Thursday: Wireframes for your finals
+* Monday: Homework for this week
+* In 2 weeks: Final project HTML/CSS (draft), pseudocode for your JS

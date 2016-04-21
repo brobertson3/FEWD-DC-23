@@ -28,3 +28,15 @@ button:active {
   display: inline-block;
   width: 40px;
 }
+
+.pinkBackground {
+  background: pink;
+  color: purple;
+  margin: 2em;
+}
+
+.greenBackground {
+  background: green;
+  color: white;
+}
+

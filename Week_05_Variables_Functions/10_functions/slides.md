@@ -2,83 +2,101 @@
 
 # FEWD 23 Lesson 10
 
-## Review (and a bit about functions)
+## Conditionals & Functions
 
 ---
 
 ## Agenda
 
 * Review
+* Conditionals, part 2!
 * Functions
 * Lab
 
 ---
 
-## Let's Review Everything We've Done So Far
+## Conditionals
 
-![](../../img/unit_1/its_gonna_be_hard.jpg)
-
----
-
-## What have we learned?
-
-* HTML
-* CSS
-* Javascript
-* jQuery
+```
+if (condition is true) {
+    // Do cool stuff
+} else {
+    // Do other cool stuff
+}
+```
 
 ---
 
-## Javascript vs. jQuery
+## Conditionals - you can have lots!
 
-Javascript __is__ jQuery
+```
+var topic = "JS";
 
-Anything you can do in jQuery, you can do in plain old Javascript.. but it's harder.
+if (topic == "JS") {
+    console.log("You're learning JavaScript");
+} else if (topic == "JavaScript") {
+    console.log("You're still learning JavaScript");
+} else {
+    console.log("You're learning something else");
+}
+```
 
-We are using jQuery to make our code simpler.
+---
+
+## Logical Operators
+
+![](../../img/unit_2/logical_operators.gif)
+
+---
+
+## More Logical Operators
+
+![](../../img/unit_2/logical_operators_2.jpg)
+
+---
+
+## Back to that other conditional
+
+```
+var topic = "JS";
+
+if (topic == "JS" || topic == "JavaScript") {
+    console.log("You're learning JavaScript");
+} else {
+    console.log("You're learning something else");
+}
+```
 
 ---
 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 
-## Temperature Converter
+## Compare That
+
+Note:
+Starter code is in lesson 9 folder.
 
 ---
 
-## How do I do this?
+## Before moving on... 1 more jQuery function
 
-1. Figure out our goal.
-2. Write pseudo-code.
-3. Write the HTML.
-4. Write the Javascript.
-5. Write the CSS.
+What if I want to change the background color based on how my numbers compare?
 
 ---
 
-## Document Ready
+## addClass
 
-* jQuery function that wraps around all of the rest of your jQuery code
-* Makes sure your jQuery does not run until after your webpage has completely loaded
-
-```
-$(document).ready(function() {
-   // ALL of your jQuery code goes here! 
-});
-```
-
----
-
-## event.preventDefault();
-
-* Use in the functions you call in event handlers to prevent the default action.
-* Example: For links, __default__ = going to another page
+In my Javascript:
 
 ```
-$('#clickMe').click(myFunction);
+$('body').addClass('purple');
+```
 
-function myFunction() {
-    event.preventDefault();
-    // Other stuff goes here
+Meanwhile, in my CSS:
+
+```
+.purple {
+    background-color: purple;
 }
 ```
 
@@ -127,12 +145,6 @@ var newNumber = addThings(1, 2);  // newNumber = 3
 
 ---
 
-## Organizing Function 
-
-Where do you put functions?
-
----
-
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Cash Register
 
@@ -144,10 +156,50 @@ Functions with no name.
 
 ---
 
+## Anonymous Functions
+
+```
+$('a.readMore').click(function() {
+    // Do stuff here
+});
+```
+
+---
+
+## Remember document.ready?
+
+That is an anonymous function!
+
+```
+$(document).ready(function() {
+    // All the jQuery goes here!
+});
+```
+
+---
+
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Anonymous Cash Register
 
 ---
 
+## Lab!
+
+... But first, how do I start a project from scratch, on my own.?
+
+---
+
+## Solving a new problem
+
+1. Figure out our goal.
+2. Write pseudo-code.
+3. Write the HTML.
+4. Write the Javascript.
+5. Write the CSS.
+
+---
+
 ![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
-## Temp Converter... part 2
+
+## Temperature Converter
+

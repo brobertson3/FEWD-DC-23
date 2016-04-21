@@ -68,41 +68,6 @@ The common element of all of these frameworks is the grid.
 
 ---
 
-## Grids
-
-A __grid system__ is a set of measurements a graphic designer can use to align and size objects a webpage. 
-
-Note:
-Although there are a few different styles of grid systems, there are no strict rules on what can or cannot be a grid. It's up to you. Any guides that help you shape the final design is okay.
-
----
-
-## CNN: 16 Column Grid
-
-![CNN Grid](images/cnn.png)
-
----
-
-## Blog Example: 12 Column Grid
-
-![WordPress Grid](images/brandford.jpg)
-
----
-
-## 12 Column Grid
-
-![12 Column Grid](images/12-column-grid.png)
-
----
-
-## CSS Framework Choices
-
-* Bootstrap
-* Foundation
-* Bourbon
-
----
-
 ## Bootstrap
 
 http://getbootstrap.com/

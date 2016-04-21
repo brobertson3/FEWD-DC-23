@@ -9,6 +9,7 @@
 ## Agenda
 
 * Review
+* Table Talk
 * More About Functions
 * Forms
 
@@ -17,6 +18,75 @@
 ## But first...
 
 Please update class GitHub repo!
+
+---
+
+## HTML tables
+
+* Tables are used for tabular data.
+* If content would make sense in Excel, it's OK to put it in a table.
+
+---
+
+## HTML tables
+
+```
+<table>
+    <tbody>
+        <tr> 
+            <td>Row 1, Cell 1</td>
+            <td>Row 1, Cell 2</td>
+        </tr>
+
+        <tr> 
+            <td>Row 2, Cell 1</td>
+            <td>Row 2, Cell 2</td>
+        </tr>
+    </tbody>
+</table>
+```
+
+---
+
+## HTML tables - Header
+
+```
+<table>
+    <thead>
+        <tr>
+            <th>Col 1 header</th>
+            <th>Col 2 header</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <!-- Table body tags go here -->
+    </tbody>
+</table>
+```
+
+---
+
+## HTML tables - Footer
+
+```
+<table>
+    <thead>
+        <!-- Table header tags go here -->
+    </thead>
+
+    <tbody>
+        <!-- Table body tags go here -->
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th>Col 1 footer</th>
+            <th>Col 2 footer</th>
+        </tr>
+    </tfoot>
+</table>
+```
 
 ---
 
@@ -73,7 +143,7 @@ $('#myButton').click(function(event) {
 ---
 
 ![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
-## Temp Converter... part 2
+## Temperature Converter
 
 ---
 
@@ -147,7 +217,6 @@ Complete Spec: <https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input>
 *  Gotchas
     * The font-family for an input is not inherited!!!
     * This can lead to funny sizing issues on Macs vs. PCs where the default font is not the same
-
 
 ---
 
@@ -241,13 +310,3 @@ Usability: Clicking the label text in either case places the focus in the input 
 Note:
 Talk about validation with if/then statements?
 
----
-
-### This Thursday: 
-Homework #5
-
-### Next Tuesday:
-Homework #6
-
-### Next Thursday:
-Next Final Project Milestone - HTML/CSS first draft

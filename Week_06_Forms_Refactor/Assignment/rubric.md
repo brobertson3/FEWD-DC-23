@@ -1,8 +1,8 @@
-#FEWD Week #6 Project: Forms
+# FEWD Week #6 Project: Forms
 
 ---
 
-###Description
+## Description
 
 This week, you'll be practicing your form skills: you have the option of adding a form to your final project, finishing the Relaxr form that will be started in class, or building a form for CitiPix. The form you build must include at least three different types of HTML form elements and some light CSS styling. We have given you an example of a form that renders well on the web and mobile devices, as well as an example, with starter code, of a registration form you could build for Relaxr.
 
