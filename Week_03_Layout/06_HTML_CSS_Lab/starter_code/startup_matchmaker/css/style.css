@@ -1,0 +1,81 @@
+/* Box Model Hack */
+*  {
+     box-sizing: border-box;
+}
+
+.clear {
+	clear: both;
+}
+
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	background-color: grey;
+}
+
+header {
+	background-color: #000;
+	border-bottom: 3px solid yellow;
+	padding: 10px;
+}
+
+header h1 {
+	color: yellow;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+nav {
+	float: right; 
+}
+
+header li {
+	color: white;
+	display: inline-block;
+	padding: 5px;
+	margin-right: 10px;
+}
+
+.bold_item {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-weight: 800;
+}
+
+h2 {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.taste {
+	text-decoration: line-through;
+}
+
+.are {
+	border-bottom: yellow 2px solid;
+}
+
+.big_pic {
+	background: url("../images/coworking.jpg") no-repeat;
+	background-position: cover;
+	padding: 20px;
+}
+
+.meet_your_match {
+	background-color: rgba(200, 200, 200, .7);
+	width: 200px;
+	float: right;
+	padding: 20px;
+}
+
+button {
+	font-weight: 600;
+	font-size: 20px;
+}
+
+.meet_your_match button {
+	margin-top: 20px;
+}
+
+.match_p {
+	font-weight: 800;
+}
