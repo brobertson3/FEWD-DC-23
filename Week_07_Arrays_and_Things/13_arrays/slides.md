@@ -8,16 +8,41 @@
 
 ## Agenda
 
-* Review
+* Anonymous functions
 * The "this" keyword
 * Arrays
 
+Note:
+Need to update class repo
+
 ---
 
-## Review
+## Anonymous Functions
 
-Note:
-Review form creation; create an example with a simple form.
+Functions with no name.
+
+---
+
+### Anonymous Functions
+
+```
+$('#myButton').click(function() {
+   // Stuff goes here. 
+});
+```
+
+---
+
+### Anonymous Functions
+
+```
+$('#myButton').click(function(event) {
+   event.preventDefault();
+
+   $('#myText').show();
+   // Any other commands go here!
+});
+```
 
 ---
 
@@ -30,7 +55,7 @@ jQuery - ```this``` refers to the selected object
 ## How about this code?
 
 ```
-$(“p”).on(“click”,function(e){
+$(“p”).click(function(){
     $(this).fadeOut(500);
 });
 ```
@@ -61,9 +86,7 @@ How could we store all the images?
 
 ---
 
-## Arrays
-
-What is an array?
+## Arrays!
 
 Note:
 Array is a collection - or list - of stuff.
@@ -198,7 +221,6 @@ Element is the item from the array
 Index is the item’s position in the array
 As always, code we want to execute goes between curly braces
 
-
 ---
 
 ![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
@@ -206,3 +228,10 @@ As always, code we want to execute goes between curly braces
 
 Note:
 More on arrays - https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array
+
+---
+
+## Housekeeping
+
+* Extra class vote: http://updwn.co/-KGAJLLIlSPrpK8CsLM6
+* Final project HTML/CSS milestone due this week!

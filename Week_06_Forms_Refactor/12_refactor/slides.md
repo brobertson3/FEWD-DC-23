@@ -2,15 +2,82 @@
 
 # FEWD 23 Lesson 12
 
-## Forms & Fixing our JS
+## Forms Part 2 and Debugging
 
 ---
 
 ## Agenda
 
+* Forms, part 2
 * Form Validation
-* Refactor
 * Debugging Techniques
+
+---
+
+## Forms review
+
+All forms go inside a form tag
+
+```
+<form>
+    <!-- Your input fields go here -->
+</form>
+```
+
+---
+
+## Forms review
+
+You can use the ```<input>``` tag to have users enter all sorts of information:
+
+* Text
+* Number
+* Email
+* Password
+* Checkboxes & Radio buttons
+
+---
+
+## Labels
+
+Use the ```<label>``` tag to add a label to your input fields.
+
+```
+<label for="firstName">First Name</label>
+<input type="text" name="firstName">
+```
+
+Or
+
+```
+<label for="animals">
+    Pick an animal:
+    <input type="radio" name="animals" value="cats"> Cats
+    <input type="radio" name="animals" value="dogs"> Dogs
+</label>
+```
+
+---
+
+## Select and Option
+
+![](../../img/unit_2/select.png)
+
+---
+
+## Select and Option
+
+![](../../img/unit_2/select_type.png)
+
+---
+
+## Submit
+
+Value is button text.
+
+ ```
+ <input type=“submit” value=“Submit”>
+ ```
 
 ---
 
@@ -31,45 +98,36 @@ We can use Javascript to validate data in form fields.
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Application Form
 
----
-
-## Refactor
-
-Make code more efficient without changing functionality.
+Note:
+Have students do part of the validation on their own.
 
 ---
 
-## Refactor
+### Anonymous Functions
 
-* To reduce or eliminate redundancy
-* Make code easier to read
-* Make code more maintainable
-
----
-
-## CSS Refactor
-
-* Remove inline styling
-* Replace repeated styles with classes
-* Rename classes/ids for readability
-* Organize CSS
-* Group by section
-* Create classes for large CSS changes in JS
-* Remove unnecessary css
+```
+$('#myButton').click(function() {
+   // Stuff goes here. 
+});
+```
 
 ---
 
-## JS Refactor
+### Anonymous Functions
 
-* Use functions
-* Use variables
-* Combine jQuery selectors
-* Chain jQuery function calls
+```
+$('#myButton').click(function(event) {
+   event.preventDefault();
+
+   $('#myText').show();
+   // Any other commands go here!
+});
+```
 
 ---
 
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
-## Refactor 
+## Anonymous Application Form
 
 ---
 
@@ -152,3 +210,42 @@ Get help!
 ![GeneralAssemb.ly](../../img/icons/code_along.png)
 ## Debug
 
+---
+
+## Refactor
+
+Make code more efficient without changing functionality.
+
+---
+
+## Refactor
+
+* To reduce or eliminate redundancy
+* Make code easier to read
+* Make code more maintainable
+
+---
+
+## CSS Refactor
+
+* Remove inline styling
+* Replace repeated styles with classes
+* Rename classes/ids for readability
+* Organize CSS
+* Group by section
+* Create classes for large CSS changes in JS
+* Remove unnecessary css
+
+---
+
+## JS Refactor
+
+* Use functions
+* Use variables
+* Combine jQuery selectors
+* Chain jQuery function calls
+
+---
+
+![GeneralAssemb.ly](../../img/icons/code_along.png)
+## Refactor 

@@ -44,11 +44,6 @@ console.log( myArr[3] );   // prints true
 
 ---
 
-![GeneralAssemb.ly](../../img/icons/exercise_icon_md.png)
-## Carousel
-
----
-
 ## GitHub Pages
 
 Use GitHub to host your website
