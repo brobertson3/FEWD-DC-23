@@ -165,3 +165,39 @@ footer {
 	color: white;
 	padding: 2% 3%;
 }
+
+/* Javascript stuff */
+
+
+
+/* For small screens */
+@media only screen and (max-width: 971px) {
+	body {
+		min-width: 400px;
+	}
+
+	#page-header nav li:nth-child(n+1) {
+		display: none;
+	}
+
+	#page-header nav li:first-child {
+		display: block;
+	}
+
+	p.tagline {
+		display: none;
+	}
+
+	section.tout {
+		width: 94%;
+	}
+
+	.blurb {
+		width: 60%;
+		min-width: 270px;
+	}
+
+	.blurb p:first-of-type {
+		display: none;
+	}
+}

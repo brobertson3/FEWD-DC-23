@@ -35,3 +35,12 @@ img {
     margin: 0.5em;
     padding: 1em;
 }
+
+.animal:nth-of-type(1){
+    flex-grow: 3;
+}
+
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+}
