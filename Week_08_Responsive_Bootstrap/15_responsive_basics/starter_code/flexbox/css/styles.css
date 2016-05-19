@@ -30,10 +30,30 @@ img {
  * Flexbox styles
  */
 
+.animals {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 900px;
+}
+
 .animal {
     background: #eee;
     margin: 0.5em;
     padding: 1em;
+    flex-basis: 300px;
+}
+
+@media screen and (max-width: 800px) {
+    .animals {
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .animals {
+        display: block;
+    }
 }
 
 .animal:nth-of-type(1){

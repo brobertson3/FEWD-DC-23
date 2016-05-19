@@ -1,25 +1,21 @@
 ![GeneralAssemb.ly](../../img/icons/FEWD_Logo.png)
 
-# FEWD 23 Lesson 18
-## Bootstrap!
+# FEWD 23 Lesson 17
+## Bootstrap
 
 ---
 
 ## Agenda
 
 * Bootstrap Navigation
-* Bootstrap Modals
+* Bootstrap Modal
 * Bootstrap Carousel
-
----
-
-## Bootstrap
 
 ---
 
 ## The parts of Bootstrap
 
-* CSS (grid)
+* CSS
 * Components (CSS-things, more complicated)
 * Javascript (interactive things)
 
@@ -53,8 +49,6 @@ http://getbootstrap.com/javascript/#modals
 1. jQuery
 2. Bootstrap
 3. Your JS file
-
-![GeneralAssemb.ly](images/script_order.jpg)
 
 ---
 
